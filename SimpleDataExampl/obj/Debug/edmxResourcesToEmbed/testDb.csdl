@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="testModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="players">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_team" Type="Int32" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="team" Relationship="Self.FK_zawodnicy_druzyny" FromRole="players" ToRole="team" />
+  </EntityType>
+  <EntityType Name="team">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeamName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="League" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="players" Relationship="Self.FK_zawodnicy_druzyny" FromRole="team" ToRole="players" />
+  </EntityType>
+  <Association Name="FK_zawodnicy_druzyny">
+    <End Role="team" Type="Self.team" Multiplicity="1" />
+    <End Role="players" Type="Self.players" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="team">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="players">
+        <PropertyRef Name="ID_team" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="testEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="players" EntityType="Self.players" />
+    <EntitySet Name="team" EntityType="Self.team" />
+    <AssociationSet Name="FK_zawodnicy_druzyny" Association="Self.FK_zawodnicy_druzyny">
+      <End Role="team" EntitySet="team" />
+      <End Role="players" EntitySet="players" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

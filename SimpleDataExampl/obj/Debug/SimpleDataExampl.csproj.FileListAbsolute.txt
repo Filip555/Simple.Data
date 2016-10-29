@@ -1,0 +1,13 @@
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\bin\Debug\SimpleDataExampl.exe
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\bin\Debug\SimpleDataExampl.pdb
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\bin\Debug\Simple.Data.dll
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\obj\Debug\SimpleDataExampl.exe
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\obj\Debug\SimpleDataExampl.pdb
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\bin\Debug\Simple.Data.Ado.dll
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\bin\Debug\Simple.Data.SqlServer.dll
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\bin\Debug\SimpleDataExampl.exe.config
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\bin\Debug\EntityFramework.dll
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\bin\Debug\EntityFramework.xml
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Filip555\Desktop\github\SimpleData\SimpleDataExampl\SimpleDataExampl\obj\Debug\SimpleDataExampl.csprojResolveAssemblyReference.cache
